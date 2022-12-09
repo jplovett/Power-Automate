@@ -1,0 +1,50 @@
+Parse JSON fails on any null values in the schema!!!
+So just Compose or get specific value:
+
+outputs('Get_user_profile_(V2)')?['body']?['onPremisesExtensionAttributes']?['extensionAttribute6']
+(5 is division and 6 is branch)
+outputs('Get_user_profile_(V2)_-_created_by_attributes')?['body']?['onPremisesExtensionAttributes']?['extensionAttribute6']
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(onPremisesExtensionAttributes)/$entity",
+  "onPremisesExtensionAttributes": {
+    "extensionAttribute1": "20220731",
+    "extensionAttribute2": null,
+    "extensionAttribute3": "1001",
+    "extensionAttribute4": "KScott3@cdc.gov",
+    "extensionAttribute5": "OD",
+    "extensionAttribute6": "DSLR",
+    "extensionAttribute7": null,
+    "extensionAttribute8": null,
+    "extensionAttribute9": "0",
+    "extensionAttribute10": null,
+    "extensionAttribute11": null,
+    "extensionAttribute12": null,
+    "extensionAttribute13": "LICENSED",
+    "extensionAttribute14": null,
+    "extensionAttribute15": "HCBCB1"
+  }
+}
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(onPremisesExtensionAttributes)/$entity",
+  "onPremisesExtensionAttributes": {
+    "extensionAttribute1": null,
+    "extensionAttribute2": "15",
+    "extensionAttribute3": "0685",
+    "extensionAttribute4": "KNoelte@cdc.gov",
+    "extensionAttribute5": "OD",
+    "extensionAttribute6": "DSLR",
+    "extensionAttribute7": "2",
+    "extensionAttribute8": null,
+    "extensionAttribute9": "0",
+    "extensionAttribute10": null,
+    "extensionAttribute11": null,
+    "extensionAttribute12": null,
+    "extensionAttribute13": "LICENSED",
+    "extensionAttribute14": "CDC0928201610-4498810087-22453-24621---CDC\\xjr8-9/28/2016 10:49:08 AM-9/28/2016 10:50:08 AM-BelowLimit-N-N--EMBX-CHAM4-",
+    "extensionAttribute15": "HCBCB1"
+  }
+}
+
+https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0#properties

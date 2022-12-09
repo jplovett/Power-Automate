@@ -1,0 +1,1 @@
+formatDateTime(addDays('1900-01-01', add(int(items('Apply_to_each')?['Created']),-2)), 'yyyy-MM-dd')

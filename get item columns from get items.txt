@@ -1,0 +1,29 @@
+
+
+outputs('Get_items_-_Get_Travel_Request_item')?['body/value'][0]['TravelerEmail']
+
+concat(outputs('Get_items_-_Get_Travel_Request_item')?['body/value'][0]['Title'],': ',outputs('Get_items_-_Get_Travel_Request_item')?['body/value'][0]['DepartureDate'])
+
+items('Apply_to_each_-_for_each_branch_approver_found')?['CDC_Email']
+items('Apply_to_each_-_for_each_branch_approver_found')?['Name']
+concat(outputs('Get_items')?['body/value'][0]['Title'],': ',outputs('Get_items')?['body/value'][0]['Departure Date'])
+
+
+concat(outputs('Get_items_-_Get_Travel_Request_item')?['body/value'][0]['Title'],': ',outputs('Get_items_-_Get_Travel_Request_item')?['body/value'][0]['Departure Date'])
+
+
+outputs('Get_items_-_Get_Travel_Request_item')?['body/value'][0]['PreparerEmail']
+
+outputs('Get_items_-_Get_Travel_Request_item')?['body/value'][0]['TravelerApprovalManangerEmail']
+
+outputs('Get_items_-_get_traveler_item_from_dslr_staff')?['body/value']
+outputs('Get_items_-_get_traveler_item_from_dslr_staff')?['body/value'][0]['Supervisor/Email']
+
+outputs('Get_items_-_Get_Travel_Request_item')?['body/value'][0]['MngrNotifiedOfTravelRequest']
+outputs('Get_items_-_Get_Travel_Request_item')?['body/value'][0]['BudgetLevelNotification']
+outputs('Get_items_-_Get_Travel_Request_item')?['body/value'][0]['SupervisorLevelNotification']
+outputs('Get_items_-_Get_Travel_Request_item')?['body/value'][0]['BranchLevelNotification']
+outputs('Get_items_-_Get_Travel_Request_item')?['body/value'][0]['Departure Date']
+outputs('Get_items_-_Get_Travel_Request_item')?['body/value'][0]['Title']
+
+outputs('Get_rows_(V2)_-_get_top_ID')?['body/value'][0]['ID']

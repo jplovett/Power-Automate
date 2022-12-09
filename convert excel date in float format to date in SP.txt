@@ -1,0 +1,5 @@
+
+convert float in Excel to date/time in SharePoint
+
+addSeconds('1899-12-30',int(formatNumber(mul(variables('SerialDateTime'),86400),'0','en-us')),'yyyy-MM-dd HH:mm:ss')
+

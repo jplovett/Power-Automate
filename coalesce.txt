@@ -1,0 +1,26 @@
+
+
+if(outputs('Get_item_-_get_NCE_item')?['body/NearMiss'],'Yes','No')
+
+coalesce(outputs('Get_item_-_get_NCE_item')?['body/SpecimenId'],' ')
+
+coalesce(outputs('Get_item_-_get_NCE_item')?['body/ReagentLot'],' ')
+
+coalesce(outputs('Get_item_-_get_NCE_item')?['body/InvestigationSummary'],' ')
+
+coalesce(outputs('Get_item_-_get_NCE_item')?['body/InvestigationRootCause'],' ')
+
+coalesce(outputs('Get_item_-_get_NCE_item')?['body/OccurrenceDate'],' ')
+
+coalesce(outputs('Get_item_-_get_NCE_item')?['body/SubmittedBy/DisplayName'],' ')
+
+coalesce(outputs('Get_item_-_get_NCE_item')?['body/Organization'],' ')
+
+coalesce(outputs('Get_item_-_get_NCE_item')?['body/SubmittedBy/DisplayName'],' ')
+
+coalesce(outputs('Get_item_-_get_NCE_item')?['body/Status/Value'],' ')
+
+
+
+
+

@@ -1,0 +1,14 @@
+addDays(triggerBody()['date'],5,'yyyy-MM-dd')
+
+addDays(utcNow(),-1,'yyyy-MM-dd')
+
+formatDateTime(addDays(utcNow(),-5,'yyyy-MM-dd'))
+
+
+Format	Example
+yyyy-MM-dd	2021-12-22
+dd-MM-yyyy	13-12-2021
+dd-MMMM-yyyy	13-December-2021
+dd-MMM-yyyy	13-Dec-2021
+dd-MM-yy	13-12-21
+MM-dd-yyyy	12-13-2021

@@ -1,0 +1,40 @@
+
+fsb5@cdc.gov;rwd6@cdc.gov;lks0@cdc.gov;nps9@cdc.gov
+/_api/web/lists/getbytitle('DCIPHER')/items?$top=2105&$select=Id,UserFirstName,UserLastName
+
+
+/_api/web/lists/getbytitle('DSLR Staff')/items?$filter=Title eq 'VAR'&$select=CDC_Email
+
+
+/_api/web/lists/getbytitle('Jurisdiction')/items?$filter=Title eq 
+
+application/json; odata=nometadata
+
+
+body('Send_an_HTTP_request_to_SharePoint')['value'][0]['Title']
+
+body('Send_an_HTTP_request_to_SharePoint')['d']['results'][0]
+body('Send_an_HTTP_request_to_SharePoint')['d']['results'][0]['PenInputJSON']
+body('Send_an_HTTP_request_to_SharePoint_-_get_Capability_Details')?['d']['results'][0]
+
+triggerBody()?['value'][0]['ID']
+items('Apply_to_each')['value']
+items('Apply_to_each_-_each_Core_Function')['Capability']
+
+split(variables('vCEFOEmail'),'@')[0]
+concat('(',split(triggerOutputs()?['body/Capability'],'.')[0],')')
+
+variables('MyArray')?[1]
+variables('MyArray')?[variables('varIndex')]
+body('Parse_JSON')?['d']?['results'][1]['User']['Email']
+
+@equals(triggerBody()?['Updated'],'Yes')
+
+div(variables('vCount'),length(variables('arrRolesinQR')))
+mul(div(100,float(length(variables('arrRolesinQR')))),variables('vCount'))
+
+
+concat(triggerBody()?['value'][0]['Title'],'.pdf')
+
+
+FileLeafRef eq '@{concat(triggerBody()?['value'][0]['Title'],'.pdf')}'

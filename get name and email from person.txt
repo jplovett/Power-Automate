@@ -1,0 +1,3 @@
+split(triggerOutputs()?['body/staffPerson/DisplayName'],' (')[0]
+
+split(triggerOutputs()?['body/staffPerson/Email'],'@')[0]

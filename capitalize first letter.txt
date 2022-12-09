@@ -1,0 +1,6 @@
+@{if
+(
+  equals(length(item()),1),
+  toupper(item()),
+  concat(first(toupper(item())),toLower(substring(item(),1,sub(length(item()),1))))  
+)} 
