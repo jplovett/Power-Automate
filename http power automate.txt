@@ -1,0 +1,59 @@
+
+/_api/web/lists/getbytitle('List Name')/items?$top=2105&$select=Id,UserFirstName,UserLastName
+
+
+/_api/web/lists/getbytitle('List Name')/items?$filter=Title eq 'VAR'&$select=CDC_Email
+
+
+/_api/web/lists/getbytitle('List Name')/items?$filter=Title eq 
+
+_api/web/lists/GetByTitle('List Name')/items(1115)/versions
+
+_api/web/SiteUsers/getByEmail('@{variables('varLoginName')}')
+
+_api/Web/lists/GetByTitle('DMS Out of Office Calendar')/items?$select=id,Category&$top=4000&$filter=Category eq 'Leave'
+
+/_api/Web/GetFolderByServerRelativeUrl('Document Library')?$expand=Files,Files/ListItemAllFields&$Files/ServerRelativeUrl,Files/Name,Files/ListItemAllFields/DocArea,Files/ListItemAllFields/Title
+
+Headers:
+Accept			application/json; odata=nometadata
+
+the call returns an array
+in the form of:
+body('Send_an_HTTP_request_to_SharePoint')['value']
+with a quantity:
+length(body('Send_an_HTTP_request_to_SharePoint')['value'])
+-------------------------------------------------------------------------
+
+body('Send_an_HTTP_request_to_SharePoint')['value'][0]['Title']
+outputs('Get_rows_(V2)_-_get_max_ID')?['body/value'][0]['ID']
+outputs('Send_an_HTTP_request_to_SharePoint_-_get_parent')?['body']['value'][0]['Id']
+outputs('Get_items_-_get_TA_Req')?['body/value'][0]['RecordOnly']
+
+body('Send_an_HTTP_request_to_SharePoint')['d']['results'][0]
+body('Send_an_HTTP_request_to_SharePoint')['d']['results'][0]['PenInputJSON']
+
+triggerBody()?['value'][0]['ID']
+items('Apply_to_each')['value']
+items('Apply_to_each_-_each_Core_Function')['Capability']
+items('Apply_to_each_-_each_PIB_contact')?['Staff/Email']
+triggerOutputs()?['body/Recognized_By_Person/DisplayName']
+items('Apply_to_each_-_check_each_recipient')?['Claims']
+
+split(variables('vCEFOEmail'),'@')[0]
+concat('(',split(triggerOutputs()?['body/Capability'],'.')[0],')')
+
+variables('MyArray')?[1]
+variables('MyArray')?[variables('varIndex')]
+body('Parse_JSON')?['d']?['results'][1]['User']['Email']
+
+@equals(triggerBody()?['Updated'],'Yes')
+
+div(variables('vCount'),length(variables('arrRolesinQR')))
+mul(div(100,float(length(variables('arrRolesinQR')))),variables('vCount'))
+
+
+concat(triggerBody()?['value'][0]['Title'],'.pdf')
+
+match file name:
+FileLeafRef eq '@{concat(triggerBody()?['value'][0]['Title'],'.pdf')}'
