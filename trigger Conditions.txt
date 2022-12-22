@@ -1,1 +1,8 @@
+Boolean: 
 @equals(triggerBody()?['UpdateContact'],true)
+
+String: 
+@equals(triggerBody()?['Title'],'Manager Approval Requested')
+
+Integer: 
+@equals(triggerBody()?['Qty'],420)
