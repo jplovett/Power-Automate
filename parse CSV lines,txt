@@ -1,0 +1,1 @@
+split(outputs('Compose'),decodeUriComponent('%0A'))
