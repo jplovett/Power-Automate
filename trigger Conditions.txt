@@ -6,3 +6,6 @@ String:
 
 Integer: 
 @equals(triggerBody()?['Qty'],420)
+
+Using Starts with:
+@startsWith(triggerBody()?['Title'],'DMS')
