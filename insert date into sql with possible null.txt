@@ -1,0 +1,6 @@
+--check if date is empty then pass in null, if not empty them pass in formatted date:
+
+if(empty(items('Apply_to_each_-_each_TR_returned')?['TAApproved']),null,formatDateTime(items('Apply_to_each_-_each_TR_returned')?['TAApproved'],'yyyy-MM-ddTHH:mm:ss'))
+
+if(empty(items('Apply_to_each_-_each_TR_returned')?['TADone']),null,formatDateTime(items('Apply_to_each_-_each_TR_returned')?['TADone'],'yyyy-MM-ddTHH:mm:ss'))
+
