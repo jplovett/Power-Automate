@@ -4,6 +4,9 @@
 
 /_api/web/lists/getbytitle('List Name')/items?$filter=Title eq 'VAR'&$select=CDC_Email
 
+/_api/web/sitegroups
+
+/_api/web/sitegroups/getbyname('ORR-DSLR-OD Members')/users
 
 /_api/web/lists/getbytitle('List Name')/items?$filter=Title eq 
 
