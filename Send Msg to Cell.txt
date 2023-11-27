@@ -1,0 +1,8 @@
+send a text to verison cell phone:
+1231231234@vtext.com
+
+send a text to ATT cell phone:
+1231231234@page.att.net
+
+full list:
+https://github.com/mfitzp/List_of_SMS_gateways/blob/master/email2sms.csv
