@@ -17,6 +17,9 @@ _api/Web/lists/GetByTitle('DMS Out of Office Calendar')/items?$select=id,Categor
 
 /_api/Web/GetFolderByServerRelativeUrl('Document Library')?$expand=Files,Files/ListItemAllFields&$Files/ServerRelativeUrl,Files/Name,Files/ListItemAllFields/DocArea,Files/ListItemAllFields/Title
 
+// Get Group Member's email & ID
+_api/Web/SiteGroups/GetByName('cCOP%20-%20Members')/users?$select=Email,ID
+
 Headers:
 Accept			application/json; odata=nometadata
 
